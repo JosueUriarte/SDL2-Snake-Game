@@ -1,2 +1,2 @@
 # SLD2 Snake Game
- Snake game with C++ architecture practices in mind.
+ Snake game with code architecture practices in mind.
