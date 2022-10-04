@@ -33,16 +33,16 @@ void Game::handleEvents()
 		else if(event.type == SDL_KEYDOWN)
 		{
 			if(event.key.keysym.sym == SDLK_w)  {snake->moveUp();}
-			if(event.key.keysym.sym == SDLK_a)  {snake->moveLeft();}
-			if(event.key.keysym.sym == SDLK_s)  {snake->moveDown();}
-			if(event.key.keysym.sym == SDLK_d)	{snake->moveRight();}
+			else if(event.key.keysym.sym == SDLK_a)  {snake->moveLeft();}
+			else if(event.key.keysym.sym == SDLK_s)  {snake->moveDown();}
+			else if(event.key.keysym.sym == SDLK_d)	{snake->moveRight();}
 		}
 	}
 }
 
 void Game::update()
 {
-	//snake->update();
+	snake->update();
 }
 
 void Game::render()
@@ -55,6 +55,7 @@ void Game::render()
 	window->setWindowRenderColor(225,225,225,225);
 	window->renderRect(snake->head);
 	window->display();
+	SDL_Delay(20);
 }
 
 void Game::clean()

@@ -18,9 +18,9 @@ void Snake::update()
 	switch(direction)
 	{
 		case Up: 
-			head.y += 10; break;
-		case Down: 
 			head.y -= 10; break;
+		case Down: 
+			head.y += 10; break;
 		case Left: 
 			head.x -= 10; break;
 		case Right: 

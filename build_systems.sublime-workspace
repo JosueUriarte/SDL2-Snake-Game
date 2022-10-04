@@ -65,6 +65,12 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Josue Uriarte/Desktop/SDL_SNAKE/SLD2-Snake-Game/include/RenderWindow.hpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_SNAKE/SLD2-Snake-Game/include/Game.hpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_SNAKE/SLD2-Snake-Game/src/renderwindow.cpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_SNAKE/SLD2-Snake-Game/include/Snake.hpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_SNAKE/SLD2-Snake-Game/src/snake.cpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_SNAKE/SLD2-Snake-Game/src/game.cpp",
 		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/include/Entity.hpp",
 		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/src/Entity.cpp",
 		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/src/math.cpp",
@@ -148,7 +154,7 @@
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 31.0
 	},
 	"find_in_files":
 	{
@@ -162,6 +168,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"isRunning",
+			"{}\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -180,7 +188,7 @@
 	},
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -189,7 +197,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 126.0
+		"height": 286.0
 	},
 	"output.find_results":
 	{
@@ -198,7 +206,7 @@
 	"pinned_build_system": "Build Debug",
 	"replace":
 	{
-		"height": 60.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -235,7 +243,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 151.0,
+	"side_bar_width": 211.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
