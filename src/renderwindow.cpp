@@ -62,18 +62,17 @@ void RenderWindow::render(Entity& p_entity)
 	SDL_RenderCopy(renderer, p_entity.getTex(), &src, &dst);
 }
 
-void RenderWindow::renderRect(SDL_Rect &rect)
-{
-	SDL_RenderFillRect(renderer, &rect);
-}
-
 void RenderWindow::setWindowRenderColor(int c1, int c2, int c3, int c4)
 {
 	SDL_SetRenderDrawColor(renderer, c1, c2, c3, c4);
 }
 
+void RenderWindow::renderRect(SDL_Rect& head)
+{
+	SDL_RenderFillRect(renderer, &head);
+}
+
 void RenderWindow::display()
 {
 	SDL_RenderPresent(renderer);
-	SDL_Delay(25);
 }
