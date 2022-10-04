@@ -1,0 +1,243 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ran",
+				"randint"
+			]
+		]
+	},
+	"build_system": "Packages/C++/C++ Single File.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Build Debug",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Build: Cancel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/include/Entity.hpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/src/Entity.cpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/src/math.cpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/include/RenderWindow.hpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/include/utils.hpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/src/renderwindow.cpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/include/Math.hpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/src/main.cpp",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/build_systems.sublime-project",
+		"/C/Users/Josue Uriarte/Desktop/SDL_BASE/build_system",
+		"/C/Users/Josue Uriarte/Desktop/backup/craft_planner.py",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project5/src/craft_planner.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/behavior_tree_bot/checks.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/behavior_tree_bot/behaviors.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/behavior_tree_bot/bt_bot.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/opponent_bots/easy_bot.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/behavior_tree_bot/bt_nodes.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/planet_wars.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/opponent_bots/defensive_bot.py",
+		"/C/Users/Josue Uriarte/AppData/Local/Temp/Temp1_MonsterTrainerRPG - StateStack Architecture.zip/MonsterTrainerRPG/README.md",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/opponent_bots/aggressive_bot.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P3/src/p3_sim.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P3/src/p3_play.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P4/opponent_bots/production_bot.py",
+		"/C/Users/Josue Uriarte/Desktop/Fall 2020/P3/src/mcts_modified.py",
+		"/C/Users/Josue Uriarte/Desktop/Phaser3 Projects/Endless Runner/README.md",
+		"/C/Users/Josue Uriarte/Documents/All-Unity-Projects/Musical-Block-Stacking/Musical-Block-Stacking/Assets/Scripts/CameraController.cs",
+		"/C/Users/Josue Uriarte/Documents/All-Unity-Projects/Bixie/Assets/Scroller/Prefabs/Scroller_1_1.unity",
+		"/C/Users/Josue Uriarte/Downloads/windows (1)/YTPPlusCLI/README.md",
+		"/C/Users/Josue Uriarte/Desktop/ALGO MUSIC 151/CSE 151 Project/CSE151_Project/Assets/Scripts/MovePlayer.cs",
+		"/C/Users/Josue Uriarte/Desktop/ALGO MUSIC 151/CSE 151 Project/CSE151_Project/Assets/Scripts/GlobalArray.cs",
+		"/C/Users/Josue Uriarte/Desktop/ALGO MUSIC 151/CSE 151 Project/CSE151_Project/Assets/Scripts/TouchingScript.cs",
+		"/C/Users/Josue Uriarte/Desktop/ALGO MUSIC 151/CSE 151 Project/CSE151_Project/Assets/Scripts/Rotator.cs",
+		"/C/Users/Josue Uriarte/Desktop/ALGO MUSIC 151/CSE 151 Project/CSE151_Project/Assets/Scripts/resetObject.cs",
+		"/C/Users/Josue Uriarte/Desktop/ALGO MUSIC 151/CSE 151 Project/CSE151_Project/Assets/Scripts/DragObject.cs",
+		"/C/Users/Josue Uriarte/Desktop/ALGO MUSIC 151/CSE 151 Project/CSE151_Project/Assets/Scripts/CameraController.cs",
+		"/C/Users/Josue Uriarte/Downloads/Unity-ARFoundation-echoAR-example-master/Unity-ARFoundation-echoAR-example-master/Assets/echoAR/echoAR.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Genetic/GAzombies.py",
+		"/C/Users/Josue Uriarte/Downloads/Unity-ARFoundation-echoAR-example-master/Unity-ARFoundation-echoAR-example-master/Assets/echoAR/CustomBehaviour.cs",
+		"/C/Users/Josue Uriarte/Desktop/ga.py",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Genetic/copy_level.py",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/spawn_properties.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/TextToMap.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/SpawnProperties.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/ZombieHealth.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/spawn_properties.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/AstarPathfindingProject/Core/AstarPath.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/Shooting.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/Bullet.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/EnemyFollow.cs",
+		"/C/Users/Josue Uriarte/Downloads/CrewLink-master/CrewLink-master/README.md",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/ga.py",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/TextToGraph.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Genetic/ga.py",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/CameraFollow.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/Bullet2.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Bullet.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/JRod Prefabs/Bullet.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/PlayerMovement.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scripts/Shooting1.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/GameWorld/Characters/SMBCharacter.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/GameWorld/Characters/SMBPlayer.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/GameWorld/SMBCamera.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/GameWorld/Particles/SMBParticleSystem.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/PlayerMovement.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/GameWorld/Particles/SMBParticle.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/Level/SMBLevelParser.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/README.md",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/Utils/SMBObjectPool.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/SMBConstants.cs",
+		"/C/Users/Josue Uriarte/Documents/Game_AI_Project/Assets/Scenes/Movement.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/Utils/SMBSceneManager.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/Final_GameAI_Project/src/Final Project/Assets/Scripts/GameWorld/Characters/SMBPlayer.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/Final_GameAI_Project/src/Final Project/Assets/Scripts/GameWorld/Characters/SMBCharacter.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/Utils/SMBSingleton.cs",
+		"/C/Users/Josue Uriarte/Documents/GitHub/GameAI_Project6/src/Player/Assets/Scripts/GameWorld/Physics/SMBRigidBody.cs",
+		"/C/Users/Josue Uriarte/Documents/Final Project/Assets/Scenes/Sample.cs",
+		"/C/Users/Josue Uriarte/Downloads/CSE111-master/CSE111-master/asg3/main.cpp",
+		"/C/Users/Josue Uriarte/Downloads/Assignment_2/Assignment 2/commands.cpp"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Build Debug",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 151.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
