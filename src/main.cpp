@@ -8,10 +8,10 @@
 #include "Game.hpp"
 #include "RenderWindow.hpp"
 
-int main(int argc, char* args[]){
+int main(int argc, char* argv[]){
 
-	// INITIALIZE GAME -----------------------------------------------------
-	Game* game = new Game();
+	// INITIALIZE NEW GAME -------------------------------------------------
+	Game* game = new Game(640, 480);
 
 	// MAIN GAME LOOP ------------------------------------------------------
 	while(game->isRunning())

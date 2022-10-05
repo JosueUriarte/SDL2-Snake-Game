@@ -9,7 +9,7 @@
 class Game
 {
 public:
-	Game();
+	Game(int res_w, int res_h);
 
 	void handleEvents();
 	void update();
