@@ -2,8 +2,6 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
-#include "Entity.hpp"
-
 class RenderWindow
 {
 public:
@@ -14,7 +12,7 @@ public:
 
 	void cleanUp();
 	void clear();
-	void render(Entity& p_entity);
+	//void render(Entity& p_entity);
 	void renderRect(SDL_Rect& head);
 	void setWindowRenderColor(int c1, int c2, int c3, int c4);
 	void display();

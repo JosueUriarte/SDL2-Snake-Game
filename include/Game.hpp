@@ -9,7 +9,8 @@
 class Game
 {
 public:
-	Game(int res_w, int res_h);
+	Game(const char* title, int res_w, int res_h);
+	~Game();
 
 	void handleEvents();
 	void update();

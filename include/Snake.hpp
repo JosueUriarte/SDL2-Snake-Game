@@ -3,12 +3,13 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 
+#include <GameObject.hpp>
 #include <RenderWindow.hpp>
 #include <Math.hpp>
 
 enum Direction {Up,Down,Left,Right,None };
 
-class Snake
+class Snake : public GameObject
 {
 public:
 	Snake(int p_x, int p_y, int w, int h);

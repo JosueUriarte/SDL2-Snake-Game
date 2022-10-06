@@ -3,7 +3,6 @@
 #include <iostream>
 
 #include "RenderWindow.hpp"
-#include "Entity.hpp"
 
 RenderWindow::RenderWindow(const char* p_title, int p_w, int p_h)
 	:window(NULL), renderer(NULL)
@@ -45,22 +44,22 @@ void RenderWindow::clear()
 	SDL_RenderClear(renderer);
 }
 
-void RenderWindow::render(Entity& p_entity)
-{
-	SDL_Rect src;
-	src.x = p_entity.getCurrentFrame().x;
-	src.y = p_entity.getCurrentFrame().y;
-	src.w = p_entity.getCurrentFrame().w;
-	src.h = p_entity.getCurrentFrame().h;
+// void RenderWindow::render(Entity& p_entity)
+// {
+// 	SDL_Rect src;
+// 	src.x = p_entity.getCurrentFrame().x;
+// 	src.y = p_entity.getCurrentFrame().y;
+// 	src.w = p_entity.getCurrentFrame().w;
+// 	src.h = p_entity.getCurrentFrame().h;
 
-	SDL_Rect dst;
-	dst.x = p_entity.getPos().x;
-	dst.y = p_entity.getPos().y;
-	dst.w = p_entity.getCurrentFrame().w;
-	dst.h = p_entity.getCurrentFrame().h;
+// 	SDL_Rect dst;
+// 	dst.x = p_entity.getPos().x;
+// 	dst.y = p_entity.getPos().y;
+// 	dst.w = p_entity.getCurrentFrame().w;
+// 	dst.h = p_entity.getCurrentFrame().h;
 
-	SDL_RenderCopy(renderer, p_entity.getTex(), &src, &dst);
-}
+// 	SDL_RenderCopy(renderer, p_entity.getTex(), &src, &dst);
+// }
 
 void RenderWindow::setWindowRenderColor(int c1, int c2, int c3, int c4)
 {

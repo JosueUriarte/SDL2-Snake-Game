@@ -11,7 +11,7 @@
 int main(int argc, char* argv[]){
 
 	// INITIALIZE NEW GAME -------------------------------------------------
-	Game* game = new Game(640, 480);
+	Game* game = new Game("SDL2 Snake", 640, 480);
 
 	// MAIN GAME LOOP ------------------------------------------------------
 	while(game->isRunning())
@@ -20,8 +20,8 @@ int main(int argc, char* argv[]){
 		game->update();
 		game->render();
 	}
-
-	// EXIT OUT SAFELY -----------------------------------------------------
+ 
+	// EXIT OUT SAFELY-----------------------------------------------------
 	game->clean();
 	SDL_Quit();
 	return 0;

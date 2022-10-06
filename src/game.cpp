@@ -5,7 +5,7 @@
 #include "Game.hpp"
 #include "RenderWindow.hpp"
 
-Game::Game(int res_w, int res_h)
+Game::Game(const char* title, int res_w, int res_h)
 {
 	// ERROR CHECKING ------------------------------------------------------
 	if(SDL_Init(SDL_INIT_VIDEO) > 0)
@@ -14,7 +14,7 @@ Game::Game(int res_w, int res_h)
 		std::cout << "IMG_Init HAS FAILED. IMG_Init Error: " << SDL_GetError() << std::endl;
 
 	// INITIALIZE GAME WINDOW ----------------------------------------------
-	window = new RenderWindow("SDL2 Snake", res_w, res_h);
+	window = new RenderWindow(title, res_w, res_h);
 
 	// INITIALIZE GAME OBJECTS ---------------------------------------------
 	snake = new Snake(300, 300, 10, 10);
