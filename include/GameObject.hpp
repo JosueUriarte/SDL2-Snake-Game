@@ -9,7 +9,7 @@
 class GameObject
 {
 public:
-	GameObject(Vector2f p_pos, SDL_Texture* p_tex);
+	void load(Vector2f p_pos, SDL_Texture* p_tex);
 
 	virtual void render();
 	virtual void update();

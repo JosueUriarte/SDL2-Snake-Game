@@ -4,8 +4,7 @@
 
 #include "GameObject.hpp"
 
-GameObject::GameObject(Vector2f p_pos, SDL_Texture* p_tex)
-:pos(p_pos), tex(p_tex)
+void GameObject::load(Vector2f p_pos, SDL_Texture* p_tex)
 {
 	currentFrame.x = 0;
 	currentFrame.y = 0;
@@ -27,5 +26,11 @@ void GameObject::update() {
 	last_update = current_time;
 }
 
-SDL_Texture* Entity::getTex() { return tex;}
-SDL_Rect Entity::getCurrentFrame() { return currentFrame;}
+void GameObject::clean() {}
+
+void GameObject::render() {}
+
+void GameObject::addChild(GameObject* child) {}
+
+SDL_Texture* GameObject::getTex() { return tex;}
+SDL_Rect GameObject::getCurrentFrame() { return currentFrame;}

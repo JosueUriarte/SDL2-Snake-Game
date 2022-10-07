@@ -30,6 +30,15 @@ void Snake::update()
 	}
 }
 
+Direction Snake::checkIfOpposite(Direction dir)
+{
+	if (dir == Up && this->direction != Down) return dir;
+	if (dir == Down && this->direction != Up) return dir;
+	if (dir == Left && this->direction != Right) return dir;
+	if (dir == Right && this->direction != Left) return dir;
+	return this->direction;
+}
+
 void Snake::Draw(RenderWindow* window)
 {
 	window->renderRect(head);

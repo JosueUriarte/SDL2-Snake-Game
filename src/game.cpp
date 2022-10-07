@@ -55,7 +55,7 @@ void Game::render()
 	window->setWindowRenderColor(225,225,225,225);
 	window->renderRect(snake->head);
 	window->display();
-	SDL_Delay(20);
+	SDL_Delay(25);
 }
 
 void Game::clean(){ window->cleanUp(); }

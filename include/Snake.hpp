@@ -16,15 +16,16 @@ public:
 
 	void Draw(RenderWindow* renderer);
 	void update();
+	
+	void moveUp(){direction = checkIfOpposite(Up); };
+	void moveDown(){direction = checkIfOpposite(Down);};
+	void moveLeft(){direction = checkIfOpposite(Left);};
+	void moveRight() { direction = checkIfOpposite(Right); };
 
-	void moveUp(){direction = Up;};
-	void moveDown(){direction = Down;};
-	void moveLeft(){direction = Left;};
-	void moveRight(){direction = Right;};
-
-	int length;
-	SDL_Rect head;
+	int length = 1;
 	Direction direction = None;
+	SDL_Rect head;
 
 private:
+	Direction checkIfOpposite(Direction dir);
 };

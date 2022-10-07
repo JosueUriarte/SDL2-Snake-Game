@@ -1,0 +1,2 @@
+﻿  gameobject.cpp
+C:\Users\Josue Uriarte\Desktop\SDL_SNAKE\SLD2-Snake-Game\src\gameobject.cpp(5,10): fatal  error C1083: Cannot open include file: 'GameObject.hpp': No such file or directory
