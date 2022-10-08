@@ -8,10 +8,12 @@
 #include "Game.hpp"
 #include "RenderWindow.hpp"
 
+enum WindowDimensions {WIDTH = 640, HEIGHT = 480};
+
 int main(int argc, char* argv[]){
 
 	// INITIALIZE NEW GAME -------------------------------------------------
-	Game* game = new Game("SDL2 Snake", 640, 480);
+	Game* game = new Game("SDL2 Snake", WIDTH, HEIGHT);
 
 	// MAIN GAME LOOP ------------------------------------------------------
 	while(game->isRunning())

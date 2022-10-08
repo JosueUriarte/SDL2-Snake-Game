@@ -4,42 +4,50 @@
 
 #include "Snake.hpp"
 
-Snake::Snake(int p_x, int p_y, int w, int h)
+Snake::Snake(Vector2f* p_pos, Vector2f* p_size)
 {
-	// SNAKE(POSITION.X, POSITION.Y, WIDTH, HEIGHT)
-	head.x = p_x;
-	head.y = p_y;
-	head.w = w;
-	head.h = h;
+	RectGameObject::load(*p_pos, *p_size);
 }
 
 void Snake::update()
 {
+
+	if (rect.x < 0 || rect.y < 0 || rect.x > 640 || rect.y > 480) reset();
+
 	switch(direction)
 	{
 		case Up: 
-			head.y -= 10; break;
+			rect.y -= GRID_INC; break;
 		case Down: 
-			head.y += 10; break;
+			rect.y += GRID_INC; break;
 		case Left: 
-			head.x -= 10; break;
-		case Right: 
-			head.x += 10; break;
+			rect.x -= GRID_INC; break;
+		case RIGHT: 
+			rect.x += GRID_INC; break;
 		default: 
 			break;
 	}
+
+}
+
+void Snake::growSnake()
+{
+
+}
+
+void Snake::reset()
+{
+	rect.x = RESET_X;
+	rect.y = RESET_Y;
 }
 
 Direction Snake::checkIfOpposite(Direction dir)
 {
 	if (dir == Up && this->direction != Down) return dir;
 	if (dir == Down && this->direction != Up) return dir;
-	if (dir == Left && this->direction != Right) return dir;
-	if (dir == Right && this->direction != Left) return dir;
+	if (dir == Left && this->direction != RIGHT) return dir;
+	if (dir == RIGHT && this->direction != Left) return dir;
 	return this->direction;
 }
 
-void Snake::Draw(RenderWindow* window)
-{
-	window->renderRect(head);
-}
+

@@ -15,6 +15,7 @@ public:
 	//void render(Entity& p_entity);
 	void renderRect(SDL_Rect& head);
 	void setWindowRenderColor(int c1, int c2, int c3, int c4);
+	SDL_Renderer* getRenderer() { return renderer; }
 	void display();
 private:
 	SDL_Window* window;

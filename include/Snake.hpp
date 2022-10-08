@@ -3,29 +3,33 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 
-#include <GameObject.hpp>
+#include <RectGameObject.hpp>
 #include <RenderWindow.hpp>
 #include <Math.hpp>
 
-enum Direction {Up,Down,Left,Right,None };
+enum SnakeVariables {RESET_X = 300, 
+					RESET_Y = 300,
+					GRID_INC = 10};
+enum Direction {Up,Down,Left,RIGHT,None };
 
-class Snake : public GameObject
+class Snake : public RectGameObject
 {
 public:
-	Snake(int p_x, int p_y, int w, int h);
+	Snake(Vector2f* p_pos, Vector2f* p_size);
 
-	void Draw(RenderWindow* renderer);
 	void update();
 	
 	void moveUp(){direction = checkIfOpposite(Up); };
 	void moveDown(){direction = checkIfOpposite(Down);};
 	void moveLeft(){direction = checkIfOpposite(Left);};
-	void moveRight() { direction = checkIfOpposite(Right); };
+	void moveRight() { direction = checkIfOpposite(RIGHT);};
+
+	void growSnake();
+	void reset();
 
 	int length = 1;
-	Direction direction = None;
-	SDL_Rect head;
-
+	Direction direction = RIGHT;
+	
 private:
 	Direction checkIfOpposite(Direction dir);
 };

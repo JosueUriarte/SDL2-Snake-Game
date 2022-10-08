@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "Snake.hpp"
+#include "Food.hpp"
 #include "RenderWindow.hpp"
 
 class Game
@@ -23,6 +24,7 @@ private:
 
 	RenderWindow* window = nullptr;
 	Snake* snake = nullptr;
+	Food* apple = nullptr;
 
 	bool is_running = false;
 };
