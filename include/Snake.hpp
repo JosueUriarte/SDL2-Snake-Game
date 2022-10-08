@@ -16,7 +16,6 @@ class Snake : public RectGameObject
 {
 public:
 	Snake(Vector2f* p_pos, Vector2f* p_size);
-
 	void update();
 	
 	void moveUp(){direction = checkIfOpposite(Up); };

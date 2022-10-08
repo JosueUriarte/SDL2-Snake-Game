@@ -39,6 +39,7 @@ void Snake::reset()
 {
 	rect.x = RESET_X;
 	rect.y = RESET_Y;
+	direction = RIGHT;
 }
 
 Direction Snake::checkIfOpposite(Direction dir)

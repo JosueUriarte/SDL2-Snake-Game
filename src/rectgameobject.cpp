@@ -12,11 +12,24 @@ void RectGameObject::load(Vector2f p_pos, Vector2f p_size)
 	rect.h = p_size.y;
 }
 
-void RectGameObject::clean() {}
+void RectGameObject::clean(){}
 
 void RectGameObject::render(RenderWindow* window)
 {
 	SDL_RenderFillRect(window->getRenderer(), &rect);
+}
+
+bool RectGameObject::isColliding(RectGameObject* obj)
+{
+	if (obj->getRect().x == this->getRect().x && obj->getRect().y == this->getRect().y)
+	{
+		is_colliding = true;
+		return true;
+	}
+	else {
+		is_colliding = false;
+		return false;
+	}
 }
 
 void RectGameObject::addChild(RectGameObject* child) {}

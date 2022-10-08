@@ -47,6 +47,11 @@ void Game::handleEvents()
 void Game::update()
 {
 	snake->update();
+	if (snake->isColliding(apple))
+	{
+		apple->findNewPos();
+	}
+
 	apple->update();
 }
 
@@ -59,7 +64,7 @@ void Game::render()
 	// RENDER GAME -------------------------------------------
 	window->setWindowRenderColor(225,225,225,225);
 	snake->render(window);
-
+	
 	window->setWindowRenderColor(225, 0, 0, 0);
 	apple->render(window);
 

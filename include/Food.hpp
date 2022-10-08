@@ -12,7 +12,7 @@ public:
 	void update();
 
 	void findNewPos(); 
-	void isColliding();
+	void isColliding(RectGameObject* snake);
 
 private:
 };

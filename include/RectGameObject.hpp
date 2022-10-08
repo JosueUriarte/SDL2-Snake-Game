@@ -14,6 +14,7 @@ public:
 	void render(RenderWindow* renderer);
 	void clean();
 
+	bool isColliding(RectGameObject* obj);
 	virtual void addChild(RectGameObject* child);
 	RectGameObject* parent = nullptr;
 	std::vector<RectGameObject*> children;
@@ -22,6 +23,7 @@ public:
 
 protected:
 	SDL_Rect rect;
+	bool is_colliding = false;
 	int last_update = 0;
 	double time_delta = 0;
 };
