@@ -7,6 +7,7 @@
 Snake::Snake(Vector2f* p_pos, Vector2f* p_size)
 {
 	RectGameObject::load(*p_pos, *p_size);
+	sdq.push_front(this->rect);
 }
 
 void Snake::update()
@@ -17,13 +18,13 @@ void Snake::update()
 	switch(direction)
 	{
 		case Up: 
-			rect.y -= GRID_INC; break;
+			SDL_Delay(50);rect.y -= GRID_INC; break;
 		case Down: 
-			rect.y += GRID_INC; break;
+			SDL_Delay(50);rect.y += GRID_INC; break;
 		case Left: 
-			rect.x -= GRID_INC; break;
+			SDL_Delay(50);rect.x -= GRID_INC; break;
 		case RIGHT: 
-			rect.x += GRID_INC; break;
+			SDL_Delay(50);rect.x += GRID_INC; break;
 		default: 
 			break;
 	}
@@ -32,11 +33,25 @@ void Snake::update()
 
 void Snake::growSnake()
 {
+	/*length += 10;
+	sdq.push_front(rect);
 
+	while (sdq.size() > length)
+		sdq.pop_back();*/
+}
+
+void Snake::render(RenderWindow* window)
+{
+	for(SDL_Rect dq_rect : sdq)
+	{
+		SDL_RenderFillRect(window->getRenderer(), &rect);
+	}
+	
 }
 
 void Snake::reset()
 {
+	length = 1;
 	rect.x = RESET_X;
 	rect.y = RESET_Y;
 	direction = RIGHT;

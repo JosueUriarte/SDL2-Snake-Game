@@ -2,6 +2,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <iostream>
+#include <deque>
 
 #include <RectGameObject.hpp>
 #include <RenderWindow.hpp>
@@ -17,18 +18,21 @@ class Snake : public RectGameObject
 public:
 	Snake(Vector2f* p_pos, Vector2f* p_size);
 	void update();
+	void render(RenderWindow* window);
 	
 	void moveUp(){direction = checkIfOpposite(Up); };
 	void moveDown(){direction = checkIfOpposite(Down);};
 	void moveLeft(){direction = checkIfOpposite(Left);};
 	void moveRight() { direction = checkIfOpposite(RIGHT);};
 
+	int getLength() { return length; };
 	void growSnake();
 	void reset();
 
-	int length = 1;
 	Direction direction = RIGHT;
 	
 private:
+	int length = 1;
+	std::deque<SDL_Rect> sdq;
 	Direction checkIfOpposite(Direction dir);
 };

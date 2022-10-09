@@ -46,13 +46,16 @@ void Game::handleEvents()
 
 void Game::update()
 {
+	// Snake Movement Update
 	snake->update();
+
+	// Snake Collision Update
 	if (snake->isColliding(apple))
 	{
 		apple->findNewPos();
+		snake->growSnake();
 	}
 
-	apple->update();
 }
 
 void Game::render()
@@ -69,7 +72,7 @@ void Game::render()
 	apple->render(window);
 
 	window->display();
-	SDL_Delay(25);
+	//SDL_Delay(15);
 }
 
 void Game::clean(){ window->cleanUp(); }

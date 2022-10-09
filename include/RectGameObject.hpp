@@ -3,6 +3,7 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 #include <vector>
+#include <deque>
 
 #include <RenderWindow.hpp>
 #include <Math.hpp>
@@ -10,14 +11,15 @@
 class RectGameObject
 {
 public:
+	//RectGameObject();
 	void load(Vector2f p_pos, Vector2f p_size);
-	void render(RenderWindow* renderer);
+	virtual void render(RenderWindow* window);
 	void clean();
 
 	bool isColliding(RectGameObject* obj);
-	virtual void addChild(RectGameObject* child);
+	virtual void addChild(RectGameObject child);
 	RectGameObject* parent = nullptr;
-	std::vector<RectGameObject*> children;
+	//std::deque<RectGameObject> children;
 
 	SDL_Rect getRect() { return rect; }
 
