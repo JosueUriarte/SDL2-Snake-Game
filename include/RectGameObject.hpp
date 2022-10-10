@@ -12,15 +12,19 @@ class RectGameObject
 {
 public:
 	//RectGameObject();
-	void load(Vector2f p_pos, Vector2f p_size);
+	void load(Vector2f p_pos, Vector2f p_size, RectGameObject* parent);
 	virtual void render(RenderWindow* window);
 	void clean();
 
 	bool isColliding(RectGameObject* obj);
 	virtual void addChild(RectGameObject child);
+	RectGameObject* getParent() { return parent; }
 	RectGameObject* parent = nullptr;
+	
 	//std::deque<RectGameObject> children;
 
+	void setRectX(float var) { rect.x = var; }
+	void setRectY(float var) { rect.y = var; }
 	SDL_Rect getRect() { return rect; }
 
 protected:

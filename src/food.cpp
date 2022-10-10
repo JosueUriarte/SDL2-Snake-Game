@@ -7,7 +7,7 @@
 
 Food::Food(Vector2f* p_pos, Vector2f* p_size)
 {
-	RectGameObject::load(*p_pos, *p_size);
+	RectGameObject::load(*p_pos, *p_size, this);
 	findNewPos();
 }
 

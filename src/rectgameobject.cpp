@@ -6,8 +6,9 @@
 
 //RectGameObject::RectGameObject() {}
 
-void RectGameObject::load(Vector2f p_pos, Vector2f p_size)
+void RectGameObject::load(Vector2f p_pos, Vector2f p_size, RectGameObject* g_parent)
 {
+	parent = g_parent;
 	rect.x = p_pos.x;
 	rect.y = p_pos.y;
 	rect.w = p_size.x;

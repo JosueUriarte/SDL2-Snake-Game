@@ -72,7 +72,7 @@ void Game::render()
 	apple->render(window);
 
 	window->display();
-	//SDL_Delay(15);
+	SDL_Delay(50);
 }
 
 void Game::clean(){ window->cleanUp(); }
