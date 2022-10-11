@@ -4,8 +4,6 @@
 
 #include "RectGameObject.hpp"
 
-//RectGameObject::RectGameObject() {}
-
 void RectGameObject::load(Vector2f p_pos, Vector2f p_size, RectGameObject* g_parent)
 {
 	parent = g_parent;
@@ -21,6 +19,7 @@ void RectGameObject::render(RenderWindow* window)
 {
 	SDL_RenderFillRect(window->getRenderer(), &rect);
 
+	// THIS WILL BE USED FOR FUTURE PROJECTS
 	//if (!children.empty())
 	//{
 	//	for (RectGameObject obj : children)
@@ -46,5 +45,5 @@ bool RectGameObject::isColliding(RectGameObject* obj)
 
 void RectGameObject::addChild(RectGameObject child)
 {
-	//children.push_back(child);
+	children.push_back(child);
 }

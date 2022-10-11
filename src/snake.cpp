@@ -20,19 +20,15 @@ void Snake::update()
 	switch(direction)
 	{
 		case Up: 
-			//SDL_Delay(50);
 			rect.y -= GRID_INC;
 			break;
 		case Down: 
-			//SDL_Delay(50);
 			rect.y += GRID_INC;
 			break;
 		case Left: 
-			//SDL_Delay(50);
 			rect.x -= GRID_INC;
 			break;
 		case RIGHT: 
-			//SDL_Delay(50);
 			rect.x += GRID_INC; 
 			break;
 		default: 

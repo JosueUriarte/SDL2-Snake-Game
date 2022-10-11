@@ -11,11 +11,6 @@ Food::Food(Vector2f* p_pos, Vector2f* p_size)
 	findNewPos();
 }
 
-void Food::update()
-{
-
-}
-
 void Food::findNewPos()
 {
 	srand(time(0));

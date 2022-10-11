@@ -44,6 +44,7 @@ void RenderWindow::clear()
 	SDL_RenderClear(renderer);
 }
 
+// TO BE USED IN THE FUTURE FOR TEXTURES
 // void RenderWindow::render(Entity& p_entity)
 // {
 // 	SDL_Rect src;

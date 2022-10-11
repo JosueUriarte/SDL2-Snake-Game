@@ -11,7 +11,6 @@
 class RectGameObject
 {
 public:
-	//RectGameObject();
 	void load(Vector2f p_pos, Vector2f p_size, RectGameObject* parent);
 	virtual void render(RenderWindow* window);
 	void clean();
@@ -21,7 +20,7 @@ public:
 	RectGameObject* getParent() { return parent; }
 	RectGameObject* parent = nullptr;
 	
-	//std::deque<RectGameObject> children;
+	std::vector<RectGameObject> children;
 
 	void setRectX(float var) { rect.x = var; }
 	void setRectY(float var) { rect.y = var; }

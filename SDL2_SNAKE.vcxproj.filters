@@ -287,9 +287,6 @@
     <ClInclude Include="include\sdl2\SDL_vulkan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\test.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\Food.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

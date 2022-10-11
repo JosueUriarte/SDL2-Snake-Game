@@ -1,8 +1,3 @@
-﻿  game.cpp
-  rectgameobject.cpp
-  main.cpp
-  renderwindow.cpp
-  snake.cpp
-  food.cpp
-  Generating Code...
+﻿  snake.cpp
+  LINK : C:\Users\Josue Uriarte\Desktop\SDL_SNAKE\SLD2-Snake-Game\x64\Debug\SDL2_SNAKE.exe not found or not built by the last incremental link; performing full link
   SDL2_SNAKE.vcxproj -> C:\Users\Josue Uriarte\Desktop\SDL_SNAKE\SLD2-Snake-Game\x64\Debug\SDL2_SNAKE.exe

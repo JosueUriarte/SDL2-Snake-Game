@@ -221,7 +221,6 @@
     <ClInclude Include="include\sdl2\SDL_video.h" />
     <ClInclude Include="include\sdl2\SDL_vulkan.h" />
     <ClInclude Include="include\Snake.hpp" />
-    <ClInclude Include="include\test.hpp" />
     <ClInclude Include="include\utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
